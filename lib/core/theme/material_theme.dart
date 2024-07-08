@@ -446,12 +446,10 @@ class MaterialTheme {
         ),
       ),
       listTileTheme: ListTileThemeData(
-        tileColor: colorScheme.primary,
-        iconColor: colorScheme.onPrimary,
-        textColor: colorScheme.onPrimary,
-        subtitleTextStyle: TextStyle(
-          color: colorScheme.onPrimary,
-        ),
+        dense: true,
+        contentPadding: EdgeInsets.zero,
+        selectedColor: colorScheme.onPrimaryContainer,
+        selectedTileColor: colorScheme.primaryContainer,
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(kDefaultRadius),
         ),

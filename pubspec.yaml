@@ -20,6 +20,7 @@ dependencies:
     path: /Users/mohamed/StudioProjects/ui_component/tot_atomic_design
   google_fonts: ^6.2.1
   cached_network_image: ^3.3.1
+  gap: ^3.0.1
 
 dev_dependencies:
   flutter_test:
