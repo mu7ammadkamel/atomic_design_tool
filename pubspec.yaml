@@ -18,6 +18,8 @@ dependencies:
   # Atomic Design package
   tot_atomic_design:
     path: /Users/mohamed/StudioProjects/ui_component/tot_atomic_design
+  atomic_design:
+    path: /Users/mohamed/StudioProjects/alkhbaz-platform/mobile-layers/packages/atomic_design
   google_fonts: ^6.2.1
   cached_network_image: ^3.3.1
   gap: ^3.0.1

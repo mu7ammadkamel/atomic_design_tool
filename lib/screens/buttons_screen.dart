@@ -32,6 +32,11 @@ class _ButtonsScreenState extends State<ButtonsScreen> {
           onPressed: () {},
         ),
       ),
+
+      TotButtonAtom(
+        text: 'Click me [ABC]',
+        onPressed: () {},
+      ),
     ];
 
     return SingleChildScrollView(

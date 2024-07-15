@@ -438,8 +438,11 @@ class MaterialTheme {
           ),
         ),
       ),
+      progressIndicatorTheme: const ProgressIndicatorThemeData(),
       elevatedButtonTheme: ElevatedButtonThemeData(
         style: ElevatedButton.styleFrom(
+          backgroundColor: Colors.blue,
+          // foregroundColor: Colors.amber,
           shape: const RoundedRectangleBorder(
             borderRadius: BorderRadius.all(Radius.circular(10)),
           ),
