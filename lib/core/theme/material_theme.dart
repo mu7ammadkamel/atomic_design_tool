@@ -427,6 +427,13 @@ class MaterialTheme {
       ),
       outlinedButtonTheme: OutlinedButtonThemeData(
         style: OutlinedButton.styleFrom(
+          // textStyle: TextStyle(
+          //   backgroundColor: ,
+          //   color: ,
+          //   decorationThickness: ,
+          //   fontSize: ,
+
+          // ),
           shape: const RoundedRectangleBorder(
             borderRadius: BorderRadius.all(Radius.circular(10)),
           ),
@@ -446,6 +453,7 @@ class MaterialTheme {
           minimumSize: const Size.fromHeight(50),
           backgroundColor: Colors.amber,
           foregroundColor: Colors.red,
+          
           shape: const RoundedRectangleBorder(
             borderRadius: BorderRadius.all(Radius.circular(10)),
           ),

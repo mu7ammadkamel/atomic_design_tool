@@ -52,7 +52,7 @@ class ButtonsAtom extends StatelessWidget {
     return Column(
       children: [
         TotBackButtonAtom(
-          color: Colors.green,
+          color: Colors.amber,
           onPressed: () {},
         ),
         TotBouncingButtonAtom(
@@ -60,8 +60,8 @@ class ButtonsAtom extends StatelessWidget {
           onPressed: () {},
           style: TotAtomStyle(
             height: 50,
-            width: 400,
-            isLoading: true,
+            width: 75,
+            isLoading: false,
           ),
         ),
         SizedBox(
@@ -72,7 +72,7 @@ class ButtonsAtom extends StatelessWidget {
           onPressed: () {},
           style: TotAtomStyle(
             height: 50,
-            width: 400,
+            width: 75,
             isLoading: false,
           ),
         ),
@@ -84,8 +84,8 @@ class ButtonsAtom extends StatelessWidget {
           onPressed: () {},
           style: TotAtomStyle(
             height: 50,
-            width: 400,
-            isLoading: true,
+            width: 105,
+            isLoading: false,
           ),
         ),
         SizedBox(
@@ -96,7 +96,7 @@ class ButtonsAtom extends StatelessWidget {
           onPressed: () {},
           style: TotAtomStyle(
             height: 50,
-            width: 400,
+            width: 105,
             isLoading: false,
           ),
         ),
@@ -104,18 +104,12 @@ class ButtonsAtom extends StatelessWidget {
           height: 10,
         ),
         TotIconButtonAtom(
-          icon: Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: [
-              Text('data'),
-              Icon(Icons.access_time_filled_rounded),
-            ],
-          ),
+          icon: Icon(Icons.access_time_filled_rounded),
           onPressed: () {},
           style: TotAtomStyle(
             height: 50,
             width: 100,
-            isLoading: true,
+            isLoading: false,
           ),
         ),
         SizedBox(
@@ -126,8 +120,8 @@ class ButtonsAtom extends StatelessWidget {
           onPressed: () {},
           style: TotAtomStyle(
             height: 50,
-            width: 400,
-            isLoading: true,
+            width: 110,
+            isLoading: false,
           ),
         ),
         SizedBox(
@@ -139,18 +133,35 @@ class ButtonsAtom extends StatelessWidget {
           style: TotAtomStyle(
             height: 50,
             width: 150,
-            isLoading: true,
+            isLoading: false,
           ),
         ),
         SizedBox(
           height: 10,
         ),
-        // TotButtonCloseAtom(
-
-        // ),
+        TotButtonCloseAtom(
+          onPressed: () {},
+        ),
         TotAvatarAtom(
           assetPath: 'asset/grand.png',
-          maxRadius: 500,
+          child: Text('data'),
+          radius: 50,
+          backgroundColor: Colors.black,
+        ),
+        SizedBox(
+          height: 10,
+        ),
+        Container(
+          color: Colors.amber,
+          child: TotNetworkImageAtom(
+            placeholderUrl:
+                'https://www.shutterstock.com/shutterstock/photos/2148937449/display_1500/stock-photo-canyon-view-in-summer-colorful-canyon-landscape-at-sunset-nature-scenery-in-the-canyon-amazing-2148937449.jpg',
+            url: 'BoxFit',
+            fit: BoxFit.fill,
+            height: 300,
+            showImage: true,
+            width: 500,
+          ),
         ),
       ],
     );
