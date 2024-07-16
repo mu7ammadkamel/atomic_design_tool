@@ -1,7 +1,7 @@
+import 'package:atomic_design/atomic_design.dart';
 import 'package:atomic_design_tool/screens/buttons_screen.dart';
 import 'package:atomic_design_tool/screens/cards_screen.dart';
 import 'package:flutter/material.dart';
-import 'package:tot_atomic_design/tot_atomic_design.dart';
 
 class MainScreen extends StatefulWidget {
   const MainScreen({super.key});
@@ -37,12 +37,12 @@ class _MainScreenState extends State<MainScreen> {
               padding: const EdgeInsets.all(10),
               child: Column(
                 children: [
-                  TotListTile(
+                  TotListTileMolecule(
                     isSelected: currentIndex == 0,
                     onTap: () => setState(() => currentIndex = 0),
                     title: 'Buttons',
                   ),
-                  TotListTile(
+                  TotListTileMolecule(
                     isSelected: currentIndex == 1,
                     onTap: () => setState(() => currentIndex = 1),
                     title: 'Cards',

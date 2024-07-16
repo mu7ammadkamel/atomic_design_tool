@@ -1,6 +1,6 @@
+import 'package:atomic_design/atomic_design.dart';
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
-import 'package:tot_atomic_design/tot_atomic_design.dart';
 
 class CardsScreen extends StatelessWidget {
   const CardsScreen({super.key});

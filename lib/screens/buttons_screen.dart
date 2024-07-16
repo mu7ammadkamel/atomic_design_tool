@@ -1,6 +1,6 @@
+import 'package:atomic_design/atomic_design.dart';
 import 'package:atomic_design_tool/atomic_design_tool.dart';
 import 'package:flutter/material.dart';
-import 'package:tot_atomic_design/tot_atomic_design.dart';
 
 class ButtonsScreen extends StatefulWidget {
   const ButtonsScreen({super.key});
@@ -26,7 +26,7 @@ class _ButtonsScreenState extends State<ButtonsScreen> {
       ),
 
       /// BouncingEffect
-      BouncingEffect(
+      TotBouncingEffect(
         child: TotButtonAtom(
           text: 'Click me [BouncingEffect]',
           onPressed: () {},

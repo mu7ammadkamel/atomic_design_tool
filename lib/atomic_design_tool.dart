@@ -2,7 +2,7 @@ import 'package:atomic_design_tool/core/theme/material_theme.dart';
 import 'package:flutter/material.dart';
 
 import 'core/theme/util.dart';
-import 'screens/home_page.dart';
+import 'screens/home_screen.dart';
 
 const double kButtonHeight = 48.0;
 const double kDefaultRadius = 10.0;
@@ -27,7 +27,7 @@ class AtomicDesignTool extends StatelessWidget {
       title: 'Atomic Design Tool',
       theme: theme.light(),
       themeMode: ThemeMode.light,
-      home: const HomePage(),
+      home: const HomeScreen(),
     );
   }
 }

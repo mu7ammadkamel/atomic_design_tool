@@ -1,5 +1,4 @@
 import 'package:atomic_design/atomic_design.dart';
-import 'package:atomic_design_tool/solutions/approach_102/organism/nue_brain_app_bar.dart';
 import 'package:flutter/material.dart';
 
 class MoleculesScreen extends StatefulWidget {
@@ -54,14 +53,6 @@ class _MoleculesScreenState extends State<MoleculesScreen> {
           text: 'Submit',
           isLoading: true,
           onPressed: () {},
-        ),
-      ],
-    );
-    return const CustomScrollView(
-      slivers: [
-        SliverPersistentHeader(
-          delegate: NeuBrainAppBar(),
-          pinned: true,
         ),
       ],
     );

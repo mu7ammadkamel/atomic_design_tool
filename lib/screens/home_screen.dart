@@ -1,20 +1,21 @@
-import 'package:atomic_design_tool/solutions/approach_101/atoms_screen.dart';
-import 'package:atomic_design_tool/solutions/approach_102/molecules_screen.dart';
+import 'package:atomic_design/atomic_design.dart';
+import 'package:atomic_design_tool/screens/atoms_screen.dart';
+import 'package:atomic_design_tool/screens/molecules_screen.dart';
+import 'package:atomic_design_tool/screens/organisms_screen.dart';
 import 'package:flutter/material.dart';
-import 'package:tot_atomic_design/tot_atomic_design.dart';
 
-class HomePage extends StatefulWidget {
-  const HomePage({super.key});
+class HomeScreen extends StatefulWidget {
+  const HomeScreen({super.key});
 
   @override
-  State<HomePage> createState() => _HomePageState();
+  State<HomeScreen> createState() => _HomeScreenState();
 }
 
-class _HomePageState extends State<HomePage> {
+class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
     return DefaultTabController(
-      length: 2,
+      length: 3,
       child: Scaffold(
           backgroundColor: context.colorScheme.surface,
           appBar: AppBar(
@@ -31,7 +32,7 @@ class _HomePageState extends State<HomePage> {
             children: [
               AtomsScreen(),
               MoleculesScreen(),
-              MoleculesScreen(),
+              OrganismsScreen(),
             ],
           )),
     );
