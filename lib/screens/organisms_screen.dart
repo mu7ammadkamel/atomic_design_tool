@@ -1,4 +1,3 @@
-import 'package:atomic_design/atomic_design.dart';
 import 'package:flutter/material.dart';
 
 class OrganismsScreen extends StatefulWidget {
@@ -34,27 +33,8 @@ class _OrganismsScreenState extends State<OrganismsScreen> {
   Widget build(BuildContext context) {
     // final elevatedButtonStyle =
     //     context.elevatedButtonStyle?.foregroundColor.toColor;
-    return Column(
-      children: [
-        TotBackButtonAtom(
-          onPressed: () {},
-          color: Colors.red,
-        ),
-        TextButton(
-          onPressed: () {},
-          child: const Text(
-            "Approach 102",
-            // style: TextStyle(
-            //   color: elevatedButtonStyle,
-            // ),
-          ),
-        ),
-        TotElevatedButtonAtom(
-          text: 'Submit',
-          isLoading: true,
-          onPressed: () {},
-        ),
-      ],
+    return const Column(
+      children: [],
     );
   }
 }

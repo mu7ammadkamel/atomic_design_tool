@@ -1,4 +1,3 @@
-import 'package:atomic_design/atomic_design.dart';
 import 'package:flutter/material.dart';
 
 class AtomsScreen extends StatefulWidget {
@@ -47,18 +46,8 @@ class ButtonsAtom extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      children: [
-        TotBackButtonAtom(
-          onPressed: () {},
-          color: Colors.red,
-        ),
-        TotElevatedButtonAtom(
-          text: 'Submit',
-          isLoading: true,
-          onPressed: () {},
-        ),
-      ],
+    return const Column(
+      children: [],
     );
   }
 }
