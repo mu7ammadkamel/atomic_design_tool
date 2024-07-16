@@ -6,16 +6,16 @@ import 'package:atomic_design_tool/solutions/approach_101/organism/sign_in_card_
 import 'package:flutter/material.dart';
 import 'package:tot_atomic_design/tot_atomic_design.dart';
 
-class Approach101Screen extends StatefulWidget {
-  const Approach101Screen({
+class AtomsScreen extends StatefulWidget {
+  const AtomsScreen({
     super.key,
   });
 
   @override
-  State<Approach101Screen> createState() => _Approach101ScreenState();
+  State<AtomsScreen> createState() => _AtomsScreenState();
 }
 
-class _Approach101ScreenState extends State<Approach101Screen> {
+class _AtomsScreenState extends State<AtomsScreen> {
   late final TextEditingController titleController;
   late final TextEditingController descriptionController;
 

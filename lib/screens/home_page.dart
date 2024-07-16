@@ -1,5 +1,5 @@
-import 'package:atomic_design_tool/solutions/approach_101/approach101_screen.dart';
-import 'package:atomic_design_tool/solutions/approach_102/approach102_screen.dart';
+import 'package:atomic_design_tool/solutions/approach_101/atoms_screen.dart';
+import 'package:atomic_design_tool/solutions/approach_102/molecules_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:tot_atomic_design/tot_atomic_design.dart';
 
@@ -21,15 +21,17 @@ class _HomePageState extends State<HomePage> {
             title: const Text('Atomic Design Solutions'),
             bottom: const TabBar(
               tabs: [
-                Tab(text: 'Approach 101'),
-                Tab(text: 'Approach 102'),
+                Tab(text: 'Atoms'),
+                Tab(text: 'Molecules'),
+                Tab(text: 'Organisms'),
               ],
             ),
           ),
           body: const TabBarView(
             children: [
-              Approach101Screen(),
-              Approach102Screen(),
+              AtomsScreen(),
+              MoleculesScreen(),
+              MoleculesScreen(),
             ],
           )),
     );

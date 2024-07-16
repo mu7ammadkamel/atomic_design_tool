@@ -2,16 +2,16 @@ import 'package:atomic_design/atomic_design.dart';
 import 'package:atomic_design_tool/solutions/approach_102/organism/nue_brain_app_bar.dart';
 import 'package:flutter/material.dart';
 
-class Approach102Screen extends StatefulWidget {
-  const Approach102Screen({
+class MoleculesScreen extends StatefulWidget {
+  const MoleculesScreen({
     super.key,
   });
 
   @override
-  State<Approach102Screen> createState() => _Approach102ScreenState();
+  State<MoleculesScreen> createState() => _MoleculesScreenState();
 }
 
-class _Approach102ScreenState extends State<Approach102Screen> {
+class _MoleculesScreenState extends State<MoleculesScreen> {
   late final TextEditingController titleController;
   late final TextEditingController descriptionController;
 
@@ -37,6 +37,10 @@ class _Approach102ScreenState extends State<Approach102Screen> {
     //     context.elevatedButtonStyle?.foregroundColor.toColor;
     return Column(
       children: [
+        TotBackButtonAtom(
+          onPressed: () {},
+          color: Colors.red,
+        ),
         TextButton(
           onPressed: () {},
           child: const Text(
