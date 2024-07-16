@@ -1,3 +1,4 @@
+import "package:atomic_design/atomic_design.dart";
 import "package:atomic_design_tool/atomic_design_tool.dart";
 import "package:flutter/material.dart";
 
@@ -353,6 +354,9 @@ class MaterialTheme {
     );
     return ThemeData(
       useMaterial3: true,
+      extensions: [
+        AppThemeExtension(),
+      ],
       dialogTheme: DialogTheme(
         backgroundColor: colorScheme.surface,
         surfaceTintColor: colorScheme.surface,
@@ -440,8 +444,8 @@ class MaterialTheme {
       filledButtonTheme: FilledButtonThemeData(
         style: FilledButton.styleFrom(
           minimumSize: const Size.fromHeight(50),
-          backgroundColor: colorScheme.primary,
-          foregroundColor: colorScheme.onPrimary,
+          backgroundColor: Colors.amber,
+          foregroundColor: Colors.red,
           shape: const RoundedRectangleBorder(
             borderRadius: BorderRadius.all(Radius.circular(10)),
           ),

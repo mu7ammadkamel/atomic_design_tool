@@ -1,3 +1,4 @@
+import 'package:atomic_design/atomic_design.dart';
 import 'package:flutter/material.dart';
 
 class AtomsScreen extends StatefulWidget {
@@ -35,7 +36,9 @@ class _AtomsScreenState extends State<AtomsScreen> {
       padding: EdgeInsets.all(16.0),
       child: Wrap(
         runSpacing: 14.0,
-        children: [],
+        children: [
+          ButtonsAtom(),
+        ],
       ),
     );
   }
@@ -46,8 +49,110 @@ class ButtonsAtom extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Column(
-      children: [],
+    return Column(
+      children: [
+        TotBackButtonAtom(
+          color: Colors.green,
+          onPressed: () {},
+        ),
+        TotBouncingButtonAtom(
+          title: 'title',
+          onPressed: () {},
+          style: TotAtomStyle(
+            height: 50,
+            width: 400,
+            isLoading: true,
+          ),
+        ),
+        SizedBox(
+          height: 10,
+        ),
+        TotDangerButtonAtom(
+          text: 'ali',
+          onPressed: () {},
+          style: TotAtomStyle(
+            height: 50,
+            width: 400,
+            isLoading: false,
+          ),
+        ),
+        SizedBox(
+          height: 10,
+        ),
+        TotElevatedButtonAtom(
+          text: 'ibrahim',
+          onPressed: () {},
+          style: TotAtomStyle(
+            height: 50,
+            width: 400,
+            isLoading: true,
+          ),
+        ),
+        SizedBox(
+          height: 10,
+        ),
+        TotFilledButtonAtom(
+          text: 'ibrahim',
+          onPressed: () {},
+          style: TotAtomStyle(
+            height: 50,
+            width: 400,
+            isLoading: false,
+          ),
+        ),
+        SizedBox(
+          height: 10,
+        ),
+        TotIconButtonAtom(
+          icon: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+              Text('data'),
+              Icon(Icons.access_time_filled_rounded),
+            ],
+          ),
+          onPressed: () {},
+          style: TotAtomStyle(
+            height: 50,
+            width: 100,
+            isLoading: true,
+          ),
+        ),
+        SizedBox(
+          height: 10,
+        ),
+        TotOutlinedButtonAtom(
+          text: 'outlined',
+          onPressed: () {},
+          style: TotAtomStyle(
+            height: 50,
+            width: 400,
+            isLoading: true,
+          ),
+        ),
+        SizedBox(
+          height: 10,
+        ),
+        TotTextButtonAtom(
+          text: 'TextButton',
+          onPressed: () {},
+          style: TotAtomStyle(
+            height: 50,
+            width: 150,
+            isLoading: true,
+          ),
+        ),
+        SizedBox(
+          height: 10,
+        ),
+        // TotButtonCloseAtom(
+
+        // ),
+        TotAvatarAtom(
+          assetPath: 'asset/grand.png',
+          maxRadius: 500,
+        ),
+      ],
     );
   }
 }
