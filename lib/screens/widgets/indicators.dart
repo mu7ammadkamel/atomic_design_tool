@@ -16,12 +16,12 @@ class Indicators extends StatelessWidget {
           value: 100,
           width: 100,
         ),
-       const Divider(),
+        const Divider(),
         TotDotIndicatorAtom(
           count: 10,
           pageController: PageController(
             initialPage: 6,
-            keepPage: true,
+            keepPage: false,
             onAttach: (position) {},
             onDetach: (position) {},
           ),
@@ -35,12 +35,10 @@ class Indicators extends StatelessWidget {
             minutes: 11,
             seconds: 1,
           ),
-          selectedIndex: 2,
           spacing: 20,
         ),
-        // const Divider(),
+        const Divider(),
         // TotLineIndicatorAtom(
-        //   activeColor: Colors.amber,
         //   count: 10,
         //   lineWidth: 150,
         //   pageController: PageController(
@@ -50,7 +48,7 @@ class Indicators extends StatelessWidget {
         //     onDetach: (position) {},
         //   ),
         //   curve: Curves.bounceInOut,
-        //   duration: Duration(
+        //   duration: const Duration(
         //     days: 2,
         //     hours: 1,
         //     microseconds: 1,
@@ -59,9 +57,8 @@ class Indicators extends StatelessWidget {
         //     seconds: 1,
         //   ),
         //   height: 500,
-        //   inactiveColor: Colors.red,
         // ),
-       const Divider(),
+        // const Divider(),
         const TotLinearProgressIndicatorAtom(
           minHeight: 1,
         ),

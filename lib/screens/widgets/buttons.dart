@@ -10,78 +10,43 @@ class Buttons extends StatelessWidget {
     return Column(
       children: [
         TotBackButtonAtom(
-          color: Colors.amber,
+          color: Colors.black26,
           onPressed: () {},
         ),
         const Divider(),
         TotBouncingButtonAtom(
           title: 'title',
           onPressed: () {},
-          style: TotAtomStyle(
-            height: 50,
-            width: 75,
-            isLoading: false,
-          ),
         ),
         const Divider(),
         TotDangerButtonAtom(
           text: 'ali',
           onPressed: () {},
-          style: TotAtomStyle(
-            height: 50,
-            width: 75,
-            isLoading: false,
-          ),
         ),
         const Divider(),
         TotElevatedButtonAtom(
           text: 'ibrahim',
           onPressed: () {},
-          style: TotAtomStyle(
-            height: 50,
-            width: 105,
-            isLoading: false,
-          ),
         ),
         const Divider(),
         TotFilledButtonAtom(
           text: 'ibrahim',
           onPressed: () {},
-          style: TotAtomStyle(
-            height: 50,
-            width: 105,
-            isLoading: false,
-          ),
         ),
         const Divider(),
         TotIconButtonAtom(
           icon: const Icon(Icons.access_time_filled_rounded),
           onPressed: () {},
-          style: TotAtomStyle(
-            height: 50,
-            width: 100,
-            isLoading: false,
-          ),
         ),
         const Divider(),
         TotOutlinedButtonAtom(
           text: 'outlined',
           onPressed: () {},
-          style: TotAtomStyle(
-            height: 50,
-            width: 110,
-            isLoading: false,
-          ),
         ),
         const Divider(),
         TotTextButtonAtom(
           text: 'TextButton',
           onPressed: () {},
-          style: TotAtomStyle(
-            height: 50,
-            width: 150,
-            isLoading: false,
-          ),
         ),
         const Divider(),
         TotButtonCloseAtom(
@@ -90,6 +55,8 @@ class Buttons extends StatelessWidget {
         const Divider(),
         TotAvatarAtom(
           assetPath: 'asset/grand.png',
+          // assetPath: '',
+
           radius: 50,
           backgroundColor: Colors.black,
           child: const Text('data'),
@@ -101,8 +68,8 @@ class Buttons extends StatelessWidget {
             placeholderUrl:
                 'https://www.shutterstock.com/shutterstock/photos/2148937449/display_1500/stock-photo-canyon-view-in-summer-colorful-canyon-landscape-at-sunset-nature-scenery-in-the-canyon-amazing-2148937449.jpg',
             url: 'BoxFit',
-            fit: BoxFit.fill,
-            height: 300,
+            fit: BoxFit.contain,
+            height: 20,
             width: 500,
           ),
         ),

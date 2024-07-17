@@ -9,12 +9,11 @@ class Dividers extends StatelessWidget {
     /// dividers
     return const Column(
       children: [
-        Divider(),
         TotDividerAtom(
-          height: 10,
-          isVertical: false,
-          thickness: 100,
-          verticalWidth: 00,
+          height: 100,
+          isVertical: true,
+          thickness: 10,
+          verticalWidth: 200,
         ),
         Divider(),
       ],

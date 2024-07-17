@@ -10,17 +10,17 @@ class TotIcons extends StatelessWidget {
     return Column(
       children: [
         TotCheckIconAtom(
-          initialValue: true,
+          initialValue: false,
           onChanged: (p0) {},
         ),
         const Divider(),
         TotFavoriteIconAtom(
           borderRadius: 10,
           borderWidth: 100,
-          hasBouncingEffect: true,
+          hasBouncingEffect: false,
           height: 10,
           iconSize: 15,
-          isFavorite: true,
+          isFavorite: false,
           onTap: () {},
           padding: const EdgeInsets.all(10),
           width: 300,

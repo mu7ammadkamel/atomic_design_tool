@@ -9,7 +9,7 @@ class Switches extends StatelessWidget {
     /// switches
     return Column(
       children: [
-        const Divider(),
+        // const Divider(),
         TotSwitchAtom(
           onChanged: (value) {},
           value: true,

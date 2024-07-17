@@ -1,3 +1,4 @@
+import 'package:atomic_design/atomic_design.dart';
 import 'package:flutter/material.dart';
 
 class Radios extends StatelessWidget {
@@ -6,16 +7,15 @@ class Radios extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     /// radios
-    return const Column(
+    return Column(
       children: [
-        // Divider(),
-        // TotRadioAtom<T>(
-        //   groupValue:  ,
-
-        //   value: ,
-        //   onChanged: ,
-        // ),
-        // Divider(),
+        // const Divider(),
+        TotRadioAtom<String>(
+          groupValue: 'ali',
+          value: 'ibrahim',
+          onChanged: (value) {},
+        ),
+        const Divider(),
       ],
     );
   }

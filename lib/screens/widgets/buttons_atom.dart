@@ -9,33 +9,26 @@ class ButtonsAtom extends StatelessWidget {
     /// atoms
     return Column(
       children: [
-        const TotChipAtom(
+        TotChipAtom(
+          onDeleted: () {},
           label: 'ddsgdg',
-          avatar: Icon(Icons.access_alarms),
+          avatar: const Icon(Icons.access_alarms),
         ),
         const Divider(),
         const TotCircleCheckImageAtom(
           height: 50,
-          iconSize: 15,
-          width: 120,
+          iconSize: 20,
+          width: 50,
         ),
         const Divider(),
         TotClipperAtom(
           borderRadius: BorderRadius.circular(12),
           child: const Text('data'),
         ),
-        //  const Divider(),
-        // TotIconTextAtom(
-        //   iconTextAtom: TotIconTextAtom(iconTextAtom: iconTextAtom, textAtom: textAtom),
-
-        //   textAtom: TotTextAtom(title: 'dsfsdf'),
-        //   crossAxisAlignment: CrossAxisAlignment.center,
-        //   fixedSpace: 50,
-        //   mainAxisAlignment:MainAxisAlignment.center ,
-        // ),
-
         const Divider(),
         TotOutlinedCardAtom(
+          height: 20,
+          width: 32,
           child: const Text('data'),
           onTap: () {},
         ),
@@ -53,12 +46,6 @@ class ButtonsAtom extends StatelessWidget {
           gap: 50,
           oldPriceFontSize: 6,
         ),
-        //  SizedBox(
-        //   height: 10,
-        // ),
-        // CustomThumbShape(
-        //   radius: 5
-        // ),
         const Divider(),
         const TotReviewIconTileAtom(
           height: 50,
@@ -89,7 +76,7 @@ class ButtonsAtom extends StatelessWidget {
           label: 'dsfdxbgf',
           height: 50,
           textStyle: TextStyle(),
-          width: 20,
+          width: 150,
         ),
         const Divider(),
         const TotTextAtom(

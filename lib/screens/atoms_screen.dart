@@ -49,16 +49,16 @@ class _AtomsScreenState extends State<AtomsScreen> {
       child: Wrap(
         spacing: 14.0,
         children: [
-          Buttons(),
-          Switches(),
           ButtonsAtom(),
+          Buttons(),
           Checks(),
           Dialogs(),
           Dividers(),
-          TotIcons(),
           Indicators(),
           Logo(),
           Radios(),
+          Switches(),
+          TotIcons(),
         ],
       ),
     );

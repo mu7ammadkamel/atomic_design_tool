@@ -6,11 +6,11 @@ class Checks extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-     /// checks
+    /// checks
     return Column(
       children: [
-        const Divider(),
         TotCheckboxAtom(
+          
           onChanged: (value) {},
           value: true,
         ),

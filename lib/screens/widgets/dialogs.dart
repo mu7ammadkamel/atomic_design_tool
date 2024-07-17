@@ -7,20 +7,17 @@ class Dialogs extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     /// dialogs
-    return Column(
+    return const Column(
       children: [
-        const Divider(),
-        Container(
-          color: Colors.amber,
-          child: const TotAlertDialogAtom(
-            actions: [Text('data')],
-            content: Text('data'),
-            height: 200,
-            title: Text('data'),
-            width: 300,
-          ),
+        TotAlertDialogAtom(
+          
+          actions: [Text('data')],
+          content: Text('data'),
+          height: 200,
+          title: Text('data'),
+          width: 300,
         ),
-        const Divider(),
+        Divider(),
       ],
     );
   }
