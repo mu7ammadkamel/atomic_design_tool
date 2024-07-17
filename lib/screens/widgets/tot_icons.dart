@@ -35,6 +35,7 @@ class TotIcons extends StatelessWidget {
           iconColor: Colors.black,
           iconSize: 15,
         ),
+        const Divider(),
       ],
     );
   }
