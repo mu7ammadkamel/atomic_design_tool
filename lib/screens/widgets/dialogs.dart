@@ -9,6 +9,7 @@ class Dialogs extends StatelessWidget {
     /// dialogs
     return Column(
       children: [
+        const Divider(),
         Container(
           color: Colors.amber,
           child: const TotAlertDialogAtom(
@@ -19,6 +20,7 @@ class Dialogs extends StatelessWidget {
             width: 300,
           ),
         ),
+        const Divider(),
       ],
     );
   }

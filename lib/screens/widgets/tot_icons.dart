@@ -13,9 +13,7 @@ class TotIcons extends StatelessWidget {
           initialValue: true,
           onChanged: (p0) {},
         ),
-        const SizedBox(
-          height: 10,
-        ),
+        const Divider(),
         TotFavoriteIconAtom(
           activeIconColor: Colors.black,
           backgroundColor: Colors.red,
@@ -31,9 +29,7 @@ class TotIcons extends StatelessWidget {
           padding: const EdgeInsets.all(10),
           width: 300,
         ),
-        const SizedBox(
-          height: 10,
-        ),
+        const Divider(),
         const TotIconAtom(
           iconData: Icons.access_alarm,
           iconColor: Colors.black,

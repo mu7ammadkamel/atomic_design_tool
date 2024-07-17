@@ -1,4 +1,4 @@
-import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
 
 class Radios extends StatelessWidget {
   const Radios({super.key});
@@ -8,12 +8,14 @@ class Radios extends StatelessWidget {
     /// radios
     return const Column(
       children: [
+        // Divider(),
         // TotRadioAtom<T>(
         //   groupValue:  ,
 
         //   value: ,
         //   onChanged: ,
         // ),
+        // Divider(),
       ],
     );
   }

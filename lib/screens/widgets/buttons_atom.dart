@@ -9,28 +9,23 @@ class ButtonsAtom extends StatelessWidget {
     /// atoms
     return Column(
       children: [
+        
         const TotChipAtom(
           label: 'ddsgdg',
           avatar: Icon(Icons.access_alarms),
         ),
-        const SizedBox(
-          height: 10,
-        ),
+        const Divider(),
         const TotCircleCheckImageAtom(
           height: 50,
           iconSize: 15,
           width: 120,
         ),
-        const SizedBox(
-          height: 10,
-        ),
+        const Divider(),
         TotClipperAtom(
           borderRadius: BorderRadius.circular(12),
           child: const Text('data'),
         ),
-        //   SizedBox(
-        //   height: 10,
-        // ),
+        //  const Divider(),
         // TotIconTextAtom(
         //   iconTextAtom: TotIconTextAtom(iconTextAtom: iconTextAtom, textAtom: textAtom),
 
@@ -40,16 +35,12 @@ class ButtonsAtom extends StatelessWidget {
         //   mainAxisAlignment:MainAxisAlignment.center ,
         // ),
 
-        const SizedBox(
-          height: 10,
-        ),
+        const Divider(),
         TotOutlinedCardAtom(
           child: const Text('data'),
           onTap: () {},
         ),
-        const SizedBox(
-          height: 10,
-        ),
+        const Divider(),
         const TotPriceAtom(
           price: 0100,
           currency: '',
@@ -69,51 +60,39 @@ class ButtonsAtom extends StatelessWidget {
         // CustomThumbShape(
         //   radius: 5
         // ),
-        const SizedBox(
-          height: 10,
-        ),
+        const Divider(),
         const TotReviewIconTileAtom(
           height: 50,
           numberText: '8',
           textStyle: TextStyle(),
           width: 60,
         ),
-        const SizedBox(
-          height: 10,
-        ),
+        const Divider(),
         const TotReviewStarAtom(
           fill: 1,
           isFillFromRight: true,
         ),
-        const SizedBox(
-          height: 10,
-        ),
+        const Divider(),
         const TotSuccessIconAtom(
           activeColor: Colors.brown,
           widget: Text('data'),
           radius: 50,
         ),
-        const SizedBox(
-          height: 10,
-        ),
+        const Divider(),
         const TotTabAtom(
           text: 'fvdf',
           height: 50,
           textStyle: TextStyle(),
           width: 300,
         ),
-        const SizedBox(
-          height: 10,
-        ),
+        const Divider(),
         const TotTagAtom(
           label: 'dsfdxbgf',
           height: 50,
           textStyle: TextStyle(),
           width: 20,
         ),
-        const SizedBox(
-          height: 10,
-        ),
+        const Divider(),
         const TotTextAtom(
           title: 'vdsvdsv',
           maxLines: 5,
@@ -121,9 +100,7 @@ class ButtonsAtom extends StatelessWidget {
           textOverflow: TextOverflow.ellipsis,
           textStyle: TextStyle(),
         ),
-        const SizedBox(
-          height: 10,
-        ),
+        const Divider(),
         TotToggleAtom(
           activeColor: Colors.green,
           activeText: 'active',

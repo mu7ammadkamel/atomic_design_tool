@@ -16,9 +16,7 @@ class Indicators extends StatelessWidget {
           value: 100,
           width: 100,
         ),
-        const SizedBox(
-          height: 10,
-        ),
+       const Divider(),
         TotDotIndicatorAtom(
           activeColor: Colors.amber,
           inactiveColor: Colors.grey,
@@ -42,9 +40,7 @@ class Indicators extends StatelessWidget {
           selectedIndex: 2,
           spacing: 20,
         ),
-        // SizedBox(
-        //   height: 10,
-        // ),
+        // const Divider(),
         // TotLineIndicatorAtom(
         //   activeColor: Colors.amber,
         //   count: 10,
@@ -67,9 +63,7 @@ class Indicators extends StatelessWidget {
         //   height: 500,
         //   inactiveColor: Colors.red,
         // ),
-        const SizedBox(
-          height: 10,
-        ),
+       const Divider(),
         const TotLinearProgressIndicatorAtom(
           minHeight: 1,
         ),

@@ -13,6 +13,7 @@ class Buttons extends StatelessWidget {
           color: Colors.amber,
           onPressed: () {},
         ),
+        const Divider(),
         TotBouncingButtonAtom(
           title: 'title',
           onPressed: () {},
@@ -22,9 +23,7 @@ class Buttons extends StatelessWidget {
             isLoading: false,
           ),
         ),
-        const SizedBox(
-          height: 10,
-        ),
+        const Divider(),
         TotDangerButtonAtom(
           text: 'ali',
           onPressed: () {},
@@ -34,9 +33,7 @@ class Buttons extends StatelessWidget {
             isLoading: false,
           ),
         ),
-        const SizedBox(
-          height: 10,
-        ),
+        const Divider(),
         TotElevatedButtonAtom(
           text: 'ibrahim',
           onPressed: () {},
@@ -46,9 +43,7 @@ class Buttons extends StatelessWidget {
             isLoading: false,
           ),
         ),
-        const SizedBox(
-          height: 10,
-        ),
+        const Divider(),
         TotFilledButtonAtom(
           text: 'ibrahim',
           onPressed: () {},
@@ -58,9 +53,7 @@ class Buttons extends StatelessWidget {
             isLoading: false,
           ),
         ),
-        const SizedBox(
-          height: 10,
-        ),
+        const Divider(),
         TotIconButtonAtom(
           icon: const Icon(Icons.access_time_filled_rounded),
           onPressed: () {},
@@ -70,9 +63,7 @@ class Buttons extends StatelessWidget {
             isLoading: false,
           ),
         ),
-        const SizedBox(
-          height: 10,
-        ),
+        const Divider(),
         TotOutlinedButtonAtom(
           text: 'outlined',
           onPressed: () {},
@@ -82,9 +73,7 @@ class Buttons extends StatelessWidget {
             isLoading: false,
           ),
         ),
-        const SizedBox(
-          height: 10,
-        ),
+        const Divider(),
         TotTextButtonAtom(
           text: 'TextButton',
           onPressed: () {},
@@ -94,24 +83,18 @@ class Buttons extends StatelessWidget {
             isLoading: false,
           ),
         ),
-        const SizedBox(
-          height: 10,
-        ),
+        const Divider(),
         TotButtonCloseAtom(
           onPressed: () {},
         ),
-        const SizedBox(
-          height: 10,
-        ),
+        const Divider(),
         TotAvatarAtom(
           assetPath: 'asset/grand.png',
           radius: 50,
           backgroundColor: Colors.black,
           child: const Text('data'),
         ),
-        const SizedBox(
-          height: 10,
-        ),
+        const Divider(),
         Container(
           color: Colors.amber,
           child: const TotNetworkImageAtom(
@@ -123,26 +106,20 @@ class Buttons extends StatelessWidget {
             width: 500,
           ),
         ),
-        const SizedBox(
-          height: 10,
-        ),
+        const Divider(),
         const TotAssetImageAtom(
           assetPath: 'asset/grand.png',
           fit: BoxFit.fill,
           height: 100,
           width: 120,
         ),
-        const SizedBox(
-          height: 10,
-        ),
+        const Divider(),
         TotDeleteButtonAtom(
           onPressed: () {},
           iconColor: Colors.red,
           iconSize: 25,
         ),
-        const SizedBox(
-          height: 10,
-        ),
+        const Divider(),
       ],
     );
   }
