@@ -1,3 +1,4 @@
+import 'package:atomic_design/atomic_design.dart';
 import 'package:flutter/material.dart';
 
 class MoleculesScreen extends StatefulWidget {
@@ -32,7 +33,16 @@ class _MoleculesScreenState extends State<MoleculesScreen> {
   @override
   Widget build(BuildContext context) {
     return const Column(
-      children: [],
+      children: [
+        SizedBox(height: 10),
+        TotAddressCardMolecule(
+          title: "title",
+          name: "name",
+          address: "address",
+          phoneNumber: "phone number",
+          width: 300,
+        ),
+      ],
     );
   }
 }

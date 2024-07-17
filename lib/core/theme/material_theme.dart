@@ -1,7 +1,7 @@
 import "package:atomic_design/atomic_design.dart";
 import "package:flutter/material.dart";
 
-const double kDefaultRadius = 10.0;
+const double kDefaultRadius = 15.0;
 
 class MaterialTheme {
   final TextTheme textTheme;
@@ -136,7 +136,10 @@ class MaterialTheme {
     return ThemeData(
       useMaterial3: true,
       extensions: const [
-        AppThemeExtension(),
+        DefaultAppTheme(
+          padding: EdgeInsets.all(10),
+          margin: EdgeInsets.symmetric(horizontal: 16),
+        ),
         AppContainerThemeExtension(
           decoration: BoxDecoration(
             color: Colors.red,
@@ -194,11 +197,11 @@ class MaterialTheme {
         ),
       ),
       cardTheme: CardTheme(
-        color: colorScheme.surface,
+        color: Colors.white,
         shadowColor: Colors.transparent,
         shape: RoundedRectangleBorder(
           side: BorderSide(color: colorScheme.onSurface.withOpacity(0.1)),
-          borderRadius: const BorderRadius.all(Radius.circular(10)),
+          borderRadius: const BorderRadius.all(Radius.circular(kDefaultRadius)),
         ),
       ),
       bottomNavigationBarTheme: BottomNavigationBarThemeData(

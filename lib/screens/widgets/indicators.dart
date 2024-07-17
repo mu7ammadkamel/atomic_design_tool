@@ -16,7 +16,12 @@ class Indicators extends StatelessWidget {
           value: 100,
           width: 100,
         ),
-       const Divider(),
+        const Divider(),
+        const TotRatingBarAtom(
+          count: 20,
+          max: 20,
+        ),
+        const Divider(),
         TotDotIndicatorAtom(
           count: 10,
           pageController: PageController(
@@ -35,9 +40,14 @@ class Indicators extends StatelessWidget {
             minutes: 11,
             seconds: 1,
           ),
-          selectedIndex: 2,
           spacing: 20,
         ),
+
+        const TotRatingBarAtom(
+          count: 20,
+          max: 20,
+        ),
+        const Divider(),
         // const Divider(),
         // TotLineIndicatorAtom(
         //   activeColor: Colors.amber,
@@ -61,7 +71,7 @@ class Indicators extends StatelessWidget {
         //   height: 500,
         //   inactiveColor: Colors.red,
         // ),
-       const Divider(),
+        const Divider(),
         const TotLinearProgressIndicatorAtom(
           minHeight: 1,
         ),
