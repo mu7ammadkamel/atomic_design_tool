@@ -31,8 +31,6 @@ class _MoleculesScreenState extends State<MoleculesScreen> {
 
   @override
   Widget build(BuildContext context) {
-    // final elevatedButtonStyle =
-    //     context.elevatedButtonStyle?.foregroundColor.toColor;
     return const Column(
       children: [],
     );
