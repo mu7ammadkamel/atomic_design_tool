@@ -1,5 +1,4 @@
 import 'package:atomic_design/atomic_design.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class Checks extends StatelessWidget {

@@ -15,15 +15,11 @@ class TotIcons extends StatelessWidget {
         ),
         const Divider(),
         TotFavoriteIconAtom(
-          activeIconColor: Colors.black,
-          backgroundColor: Colors.red,
-          borderColor: Colors.red,
           borderRadius: 10,
           borderWidth: 100,
           hasBouncingEffect: true,
           height: 10,
           iconSize: 15,
-          inActiveIconColor: Colors.grey,
           isFavorite: true,
           onTap: () {},
           padding: const EdgeInsets.all(10),
@@ -32,7 +28,6 @@ class TotIcons extends StatelessWidget {
         const Divider(),
         const TotIconAtom(
           iconData: Icons.access_alarm,
-          iconColor: Colors.black,
           iconSize: 15,
         ),
         const Divider(),

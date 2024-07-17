@@ -22,7 +22,7 @@ packages:
     description:
       path: "packages/atomic_design"
       ref: "enhancement/style"
-      resolved-ref: "0915cf14659d12c225bd145d9c5ec14cf41357bc"
+      resolved-ref: "81519fcfd7ca03c509f5bca4e008bece7eefe885"
       url: "https://github.com/TOTPLATFORM/mobile-layers.git"
     source: git
     version: "0.0.1+1"

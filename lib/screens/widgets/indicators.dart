@@ -18,8 +18,6 @@ class Indicators extends StatelessWidget {
         ),
        const Divider(),
         TotDotIndicatorAtom(
-          activeColor: Colors.amber,
-          inactiveColor: Colors.grey,
           count: 10,
           pageController: PageController(
             initialPage: 6,

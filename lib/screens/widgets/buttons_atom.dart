@@ -9,7 +9,6 @@ class ButtonsAtom extends StatelessWidget {
     /// atoms
     return Column(
       children: [
-        
         const TotChipAtom(
           label: 'ddsgdg',
           avatar: Icon(Icons.access_alarms),
@@ -101,17 +100,6 @@ class ButtonsAtom extends StatelessWidget {
           textStyle: TextStyle(),
         ),
         const Divider(),
-        TotToggleAtom(
-          activeColor: Colors.green,
-          activeText: 'active',
-          controller: ValueNotifier(true),
-          height: 50,
-          inactiveColor: Colors.red,
-          inactiveText: 'in active',
-          isText: false,
-          onChange: (p1) {},
-          width: 300,
-        ),
       ],
     );
   }

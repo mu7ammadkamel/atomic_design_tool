@@ -116,7 +116,6 @@ class Buttons extends StatelessWidget {
         const Divider(),
         TotDeleteButtonAtom(
           onPressed: () {},
-          iconColor: Colors.red,
           iconSize: 25,
         ),
         const Divider(),
