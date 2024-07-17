@@ -20,9 +20,11 @@ packages:
   atomic_design:
     dependency: "direct main"
     description:
-      path: "/Users/mohamed/StudioProjects/alkhbaz-platform/mobile-layers/packages/atomic_design"
-      relative: false
-    source: path
+      path: "packages/atomic_design"
+      ref: "enhancement/style"
+      resolved-ref: "0915cf14659d12c225bd145d9c5ec14cf41357bc"
+      url: "https://github.com/TOTPLATFORM/mobile-layers.git"
+    source: git
     version: "0.0.1+1"
   boolean_selector:
     dependency: transitive
