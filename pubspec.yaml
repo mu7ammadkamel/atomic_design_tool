@@ -15,7 +15,7 @@ dependencies:
   cupertino_icons: ^1.0.6
   fluentui_system_icons: ^1.1.246
 
-  # Atomic Design package
+  # Atatomic_designomic Design package
   atomic_design:
     git:
       url: https://github.com/TOTPLATFORM/mobile-layers.git
@@ -25,6 +25,10 @@ dependencies:
   google_fonts: ^6.2.1
   cached_network_image: ^3.3.1
   gap: ^3.0.1
+
+dependency_overrides:
+  # atomic_design:
+    # path: /Users/mohamed/StudioProjects/alkhbaz-platform/mobile-layers/packages/atomic_design
 
 dev_dependencies:
   flutter_test:

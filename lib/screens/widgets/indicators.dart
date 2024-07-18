@@ -17,6 +17,11 @@ class Indicators extends StatelessWidget {
           width: 100,
         ),
         const Divider(),
+        const TotRatingBarAtom(
+          count: 20,
+          max: 20,
+        ),
+        const Divider(),
         TotDotIndicatorAtom(
           count: 10,
           pageController: PageController(
@@ -37,7 +42,13 @@ class Indicators extends StatelessWidget {
           ),
           spacing: 20,
         ),
+
+        const TotRatingBarAtom(
+          count: 20,
+          max: 20,
+        ),
         const Divider(),
+        // const Divider(),
         // TotLineIndicatorAtom(
         //   count: 10,
         //   lineWidth: 150,
@@ -58,7 +69,7 @@ class Indicators extends StatelessWidget {
         //   ),
         //   height: 500,
         // ),
-        // const Divider(),
+        const Divider(),
         const TotLinearProgressIndicatorAtom(
           minHeight: 1,
         ),
