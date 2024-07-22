@@ -22,16 +22,16 @@ class _HomeScreenState extends State<HomeScreen> {
             title: const Text('Atomic Design Solutions'),
             bottom: const TabBar(
               tabs: [
-                Tab(text: 'Atoms'),
                 Tab(text: 'Molecules'),
+                Tab(text: 'Atoms'),
                 Tab(text: 'Organisms'),
               ],
             ),
           ),
           body: const TabBarView(
             children: [
-              AtomsScreen(),
               MoleculesScreen(),
+              AtomsScreen(),
               OrganismsScreen(),
             ],
           )),

@@ -36,11 +36,9 @@ class ButtonsAtom extends StatelessWidget {
         const TotPriceAtom(
           price: 0100,
           currency: '',
-          currentPriceFontSize: 15,
           decimalPoints: 5,
           discountDecimalPoints: 3,
           discountPrc: 500,
-          discountPrcFontSize: 15,
           discountPrice: 100,
           discountString: '',
           gap: 50,
@@ -50,7 +48,6 @@ class ButtonsAtom extends StatelessWidget {
         const TotReviewIconTileAtom(
           height: 50,
           numberText: '8',
-          textStyle: TextStyle(),
           width: 60,
         ),
         const Divider(),
@@ -68,14 +65,12 @@ class ButtonsAtom extends StatelessWidget {
         const TotTabAtom(
           text: 'fvdf',
           height: 50,
-          textStyle: TextStyle(),
           width: 300,
         ),
         const Divider(),
         const TotTagAtom(
           label: 'dsfdxbgf',
           height: 50,
-          textStyle: TextStyle(),
           width: 150,
         ),
         const Divider(),
@@ -84,7 +79,6 @@ class ButtonsAtom extends StatelessWidget {
           maxLines: 5,
           textAlign: TextAlign.center,
           textOverflow: TextOverflow.ellipsis,
-          textStyle: TextStyle(),
         ),
         const Divider(),
       ],

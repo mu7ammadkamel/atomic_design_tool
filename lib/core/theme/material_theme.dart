@@ -140,14 +140,7 @@ class MaterialTheme {
           padding: EdgeInsets.all(10),
           margin: EdgeInsets.symmetric(horizontal: 16),
         ),
-        AppContainerThemeExtension(
-          decoration: BoxDecoration(
-            color: Colors.red,
-            borderRadius: BorderRadius.all(
-              Radius.circular(kDefaultRadius),
-            ),
-          ),
-        ),
+       
       ],
       dialogTheme: DialogTheme(
         backgroundColor: colorScheme.surface,

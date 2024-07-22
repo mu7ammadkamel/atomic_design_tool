@@ -1,6 +1,8 @@
 import 'package:atomic_design/atomic_design.dart';
 import 'package:flutter/material.dart';
 
+import 'widgets_molecules/tot_address_card_molecule_widget.dart';
+
 class MoleculesScreen extends StatefulWidget {
   const MoleculesScreen({
     super.key,
@@ -34,14 +36,10 @@ class _MoleculesScreenState extends State<MoleculesScreen> {
   Widget build(BuildContext context) {
     return const Column(
       children: [
-        SizedBox(height: 10),
-        TotAddressCardMolecule(
-          title: "title",
-          name: "name",
-          address: "address",
-          phoneNumber: "phone number",
-          width: 300,
-        ),
+        Divider(),
+        TotAddressCardMoleculeWidget(),
+        Divider(),
+// TotAddressTypeMolecule
       ],
     );
   }
